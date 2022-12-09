@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    overflow-x: hidden;
+    transition: .1s linear;
+}
+.navbar{
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.699);
+    font-family: verdana;
+    position: sticky;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+} 
+nav h1{
+    color: Yellow;
+    font-size: 3rem;
+    margin-left: 5vmin;
+    cursor: pointer;
+}
+nav span{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 4vmin;
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+}
+nav .active{
+    color: yellow;
+}
+nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    text-decoration:underline;
+    color: yellow;
+}
+nav ul li i{
+    margin: 3px;
+}
+nav ul button{
+    padding: 10px;
+    margin-left: 5px;
+    color: yellow;
+    background-color:transparent;
+    border: 1px solid yellow;
+    font-weight: bold;
+}
+nav ul button:hover{
+    border: 1px solid rgb(179, 179, 179);
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+}
+
+.fa-bars{
+    margin: 20px;
+    font-size: 2rem;
+    color: yellow;
+    font-weight: bold;
+    display: none;
+}
+
+/* overview of the text */
+
+.overview{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Both.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overview-text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.overview-text h1{
+    font-family:Verdana;
+    font-size: 6vmin;
+    font-weight: bold;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: rgb(255, 255, 255);
+}
+.overview-text .h2{
+    color: yellow;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.overview-text h1 i{
+    position: relative;
+    top: -25px;
+    left: 0;
+}
+.overview-text p{
+    font-size: 1rem;
+    color: white;
+    font-family: verdana;
+    margin: 7px auto;
+}
+
+/* price tag with with text */
+
+.price-tag{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    transition: 3s ease-in;
+}
+.price{
+    width: 70%;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: verdana;
+    background: black;
+}
+.price h1{
+    font-size: 4vmin ;
+    color: rgb(211, 211, 211);
+    text-align: center;
+    margin: 20px 15px 10px;
+}
+.price h1 span{
+    color: Yellow;
+}
+.price p{
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+    margin: 20px;
+    text-indent: 70px;
+    line-height: 27px;
+    text-align: justify;
+}
+.card-with-price{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:  center;
+}
+.cards{
+    width: 25vmin;
+    height: 38vmin;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 0;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0px 3px 20px 3px black;
+}
+.card:hover{
+    transform: scale(1.1);
+    z-index: 20;
+}
+.card1{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(../images/girl-fitness.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.card2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../images/angry-boy-shout.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.card1 h1, .card2 h1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin-bottom: 10px;
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .5px;
+    place-items: end center;
+}
+
+/* banner */
+
+.banner{
+    width: 100%;
+    height: 70vmin;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url(../images/fitness.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+/* Scroll card menu */
+
+.menu-cards{
+    width: 100vw;
+}
+.menu-cards h1{
+    width: 100%;
+    text-align: center;
+    font-family: verdana;
+    margin: 10px auto 50px;
+    font-size: 6vmin;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 1px 1px 10px black;
+}
+.box-card{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row; 
+}
+.card{
+    width: 100%;
+    height: 60vmin;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 20px 10px rgb(0, 0, 0);
+}
+.card-1{
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5),rgb(0, 0, 0)), url(../images/simple-fitness.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border: 1px solid white;
+    left: 100px;
+    z-index: 4;
+}
+.card-2{
+    background-image:  radial-gradient(rgba(0, 0, 0, 0.5),rgb(0, 0, 0)), url(../images/girl-workout.jpg);
+    height: 65vmin;
+    background-position: center;
+    background-size: cover;
+    z-index: 5;
+    border: 1px solid white;
+    position: relative;
+    top: -15px;
+}
+.card-3{
+    background-image:  radial-gradient(rgba(0, 0, 0, 0.5),rgb(0, 0, 0)), url(../images/man-fire-thum.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 100px;
+    border: 1px solid white;
+    z-index: 4;
+}
+.card p{
+    width: 100%;
+    height: 100%;
+    color: yellow;
+    font-family: verdana;
+    font-weight: bold;
+    display: grid;
+    font-size: 3vmin;
+    place-items: end center;
+}
+
+/* social media */
+
+.social-media{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media i{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin: auto 20px;
+}
+.social-media i:hover{
+    color:white;
+}
+
+/* quotes */
+
+.quotes{
+    width: 100%;
+    text-align:justify;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    color: rgb(176, 176, 176);
+    text-indent: 100px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: verdana;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 50px;
+    font-size: 3vmin;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(68, 68, 68);
+    font-weight: bold;
+    font-family: verdana;
+}
+
+
+
+@media (max-width:995px){
+    .card-with-price {
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 200px;
+    }
+    .box-card{
+        width: 90%;
+    }
+}
+
+@media (max-width:600px){
+    nav ul{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        padding-bottom: 10px;
+        background-color: rgb(121, 121, 121);
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+    .active{
+        display: flex;
+    }
+    nav h1{
+        font-size: 2rem;
+    }
+    nav span{
+        font-size:1.5rem;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .overview{
+        background: none;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/boy-profile-fit.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .price{
+        width: 100%;
+        height: 100%;
+    }
+    .price-tag{
+        flex-wrap: wrap;
+        display: grid;
+        place-items: center;
+    }
+    .price h1{
+        font-size: 1.5rem;
+    }
+    .card-with-price{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .card-with-price .cards{
+        width: 250px;
+        height: 300px;
+    }
+    .banner{
+        height: 100vmin;
+        background-position: right;
+    }
+    .box-card{
+        width: 100%;
+    }
+    .box-card .card-1{
+        position:relative;
+        left: 0;
+    }
+    .box-card .card-2{
+        position:relative;
+        top: 0;
+        height:60vmin ;
+    }
+    .box-card .card p{
+        font-size: 5vmin;
+    }
+    .box-card .card-3{
+        position:relative;
+        right: 0;
+    }
+    .box-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .quotes{
+        font-size: .6rem;
+    }
+
+}
+
+@media (max-width:430px){
+
+    .overview-text i{
+        display: none;
+    }
+    .overview-text{
+        display: block;
+    }
+    .overview-text h1{
+        font-size: 2.7rem;
+        position: relative;
+        letter-spacing: 2px;
+        top: 260px;
+        left: 0px;
+    }
+    .overview-text .h2{
+        margin-left: 0px;
+    }
+    .overview-text p{
+        position: relative;
+        top: 270px;
+    }
+}
